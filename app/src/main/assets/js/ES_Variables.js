@@ -1,0 +1,16 @@
+IMG_DIR = '../img/';
+NAMES_NOT_EMPTY = 'No pueden existir nombres vacios.';
+AMOUNT_GREATER_ZERO = 'El monto tiene que ser mayor a cero.';
+LEAST_TWO_PERSON = "Debe ingresar al menos dos personas.";
+TOTAL_COST = "Costo total:"
+AMOUNT_PER_PERSON = "Costo por persona:";
+TRY_ANOTHER_SPLIT = 'Siguiente alternativa';
+CLEAR = "Limpiar";
+FROM = 'De';
+TO = 'Para';
+AMOUNT_TO_PAY = 'Monto a pagar';
+ERROR_IN_DATA = 'Error en los datos ingresados';
+RESULT = 'Resultado';
+BACK_TO_MAIN = "Volver a editar";
+PERSON = "Persona: ";
+TOTAL_SPLIT = "Formas repartir el costo:  ";

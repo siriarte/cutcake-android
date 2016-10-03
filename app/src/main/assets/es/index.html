@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="../js/GlobalVariables.js"></script>
+        <script src="../js/ES_Variables.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/cutcake.js"></script>
+
+        <title>CutCake</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/glyphicons-273-cake.png" />
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-61253093-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body class="nopadding">
+        <div class="container-fluid">
+            <div id="logo" class="text-center">
+                <img style="margin-bottom:5px" alt="CutCake" src="../img/cutCakeLogo.jpg"><br>
+            </div>
+                <div id="forms">
+                <p class="lead text-center margin_from_tittle small">
+                    <img src="../img/glyphicons-31-pencil.png" alt="Edit Name" class="pencil_icon"/> Ingrese el nombre de la persona y el monto que gastó
+                    
+                </p> 
+
+                <div class="col-xs-12" id="p_row" style="display: none; margin-bottom: 15px;">
+                    <div class="panel panel-info">
+                        <div class="panel-heading" style="height: 40px;">
+                            <span id="personId"></span>
+                            <button id="remove_btn" type="button" onclick="delRow(this)" class="remove_button">
+                                <img align="right" id='remove_img' SRC='../img/glyphicons-17-bin.png' alt="Remove" class="remove_icon">
+                            </button>
+                        </div>
+                        <div class="panel-body" style="width: max-content">
+                            <label class="sr-only">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nombre">
+                            <label class="sr-only">Amount</label>
+                            <input type="number" min="0" class="form-control" id="amount" placeholder="Monto">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div id="op_btns" class="form-inline text-center margin_to_footer">
+                <button type="button" class="btn btn-info margin_from_forms" onclick="sumAmount()">
+                    <img src="../img/glyphicons-324-calculator.png" class="calculate_icon" alt="Calculate">  Calcular
+                </button> 
+                <button type="button" class="btn btn-warning margin_from_forms" onclick="addField()">
+                    <img src="../img/glyphicons-191-circle-plus.png" class="addPerson_icon" alt="Calculate">  Agregar Persona
+                </button>  
+            </div> 
+            
+            <div id="footer" class="footer mail_link">
+                <p style="display: inline">
+                    <a style="color: #000" onclick="reset()"> Reset </a> /
+                    <a style="color: #000" href="../index.html"> English </a> /
+                    <a style="color: #000" onclick="showAbout()"> About </a>
+                </p>
+            </div>
+            
+            <script>
+                addField();
+                addField();
+            </script>
+
+            <div class="jumbotron" style="display: none;" id="result"></div>
+            <div class="jumbotron" style="display: none; margin-top: 10px;" id="div_error"></div>
+            
+            <div id="about" class="margin_from_tittle" style="display: none;">
+                <br>
+                <p class="openModel_text_tittle">Es una aplicación que le permite:</p>
+                <p class="openModel_text"><img src="../img/glyphicons-228-usd.png" alt="" class="mini_icon">Divide el costo de un evento en partes iguales entre la gente que participo y gastó dinero en el.</p>
+                <p class="openModel_text"><img src="../img/glyphicons-43-pie-chart.png" alt="" class="mini_icon">Provee distintas alternativas para distribuir el dinero gastado entre los participantes.</p>
+                <br>
+                <p class="openModel_text_tittle">Y lo hace:</p>
+                <p class="openModel_text"><img src="../img/glyphicons-2-leaf.png" alt="" class="mini_icon">De forma simple.<p>
+                <p class="openModel_text"><img src="../img/glyphicons-161-imac.png" alt="" class="mini_icon">Para multiples plataformas (Web y Movil).</p>
+                <br>                
+                <p class="openModel_text">Created by Santiago Iriarte.</p>
+                <p class="openModel_text"><a>http://www.cutcake.net</a></p>
+                <p class="openModel_text">©2015. CutCake.</p>
+                <br>
+                <button type="button" id="back_btn" class="btn" onclick="backToMain()"><img src="../img/glyphicons-211-left-arrow.png" class="result_icons_size" alt="back"> Back</button>
+            </div>
+        </div>
+    </body>
+</html>

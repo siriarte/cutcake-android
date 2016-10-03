@@ -1,0 +1,16 @@
+IMG_DIR = 'img/';
+NAMES_NOT_EMPTY = 'Names can not be empty.';
+AMOUNT_GREATER_ZERO = 'The amount must be greater than zero.';
+LEAST_TWO_PERSON = 'Complete at least with two person.';
+TOTAL_COST = "Total cost:";
+AMOUNT_PER_PERSON = 'Cost per person:';
+TRY_ANOTHER_SPLIT = 'Next split way';
+CLEAR = 'Clear';
+FROM = 'From';
+TO = 'To';
+AMOUNT_TO_PAY = 'Amount to pay';
+ERROR_IN_DATA = 'Error in data entered';
+RESULT = 'Result';
+BACK_TO_MAIN = "Back for edit";
+PERSON = "Person: ";
+TOTAL_SPLIT = "Ways to split the amount:  ";
